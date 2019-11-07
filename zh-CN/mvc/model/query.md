@@ -518,7 +518,7 @@ num, err := o.QueryTable("user").ValuesList(&lists, "name", "profile__age")
 if err == nil {
 	fmt.Printf("Result Nums: %d\n", num)
 	for _, row := range lists {
-		fmt.Printf("Name: %s, Age: %s\m", row[0], row[1])
+		fmt.Printf("Name: %s, Age: %s\n", row[0], row[1])
 	}
 }
 ```
